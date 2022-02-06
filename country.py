@@ -7,10 +7,10 @@
 import random
 from countryinfo import CountryInfo
 from pyrogram import filters, Client as DonLee_Robot_V2
-from DonLee_Robot_V2.Config_Vars.H_Vars import BUTTONS
-from DonLee_Robot_V2 import Config, Import 
+from @Thor_RoBoT .Config_Vars.H_Vars import BUTTONS
+from @Thor_RoBoT import Config, Import 
 
-@DonLee_Robot_V2.on_message(filters.command(["country"]))
+@Thor_RoBoT.on_message(filters.command(["country"]))
 async def country_info(bot, update: Import.Msg):
     country = update.text.split(" ", 1)[1]
     country = CountryInfo(country)
@@ -38,7 +38,7 @@ Population : <code>{country.population()}</code>
 
 𝖳𝗂𝗆𝖾𝗓𝗈𝗇𝖾 : <code>{country.timezones()}</code>
 
-𝖬𝖺𝖽𝖾 𝖻𝗒 @Mo_Tech_YT"""
+𝖬𝖺𝖽𝖾 𝖻𝗒 @M_STER_TECH_GROUP"""
     country_name = country.name()
     country_name = country_name.replace(" ", "+")
     buttons=[[
